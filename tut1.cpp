@@ -1,29 +1,37 @@
 #include <iostream>
+
 using namespace std;
 int main()
 {
-	int a, b,i, c ,v;
+	int a, b,i ,c;
 	a = 3;
 	b = 5;
 	c = 7;
-	for (i = 1; i = 2ch
+																																																													
+
+	for (i = 1; i <= 20;i=i+1)
 	{
-		v = i;
-		if( i % a = 0)
-		{
-			cout << "Fizz" << endl;
-		}
-		if (i % b = 0)
-		{
-			cout << "Buzz" << endl;
-		}
-		if (i % a =0  && i%b =0)
+		if (i % a == 0 && i % b == 0)
 		{
 			cout << "Fizz Buzz" << endl;
 		}
 		else
 		{
-			cout << "%d, i" << endl;
+			if (i % a == 0)
+			{
+				cout << "Fizz" << endl;
+			}
+			if (i % b == 0)
+			{
+				cout << "Buzz" << endl;
+			}
+
+			if (i % a != 0 && i % b != 0)
+			{
+				printf("%d\n", i);
+			}
 		}
+
+		
 	}
 }
