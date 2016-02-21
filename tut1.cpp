@@ -9,27 +9,58 @@ int main()
 	c = 7;
 																																																													
 
-	for (i = 1; i <= 20;i=i+1)
+	for (i = 1; i <= 50;i=i+1)
 	{
 		if (i % a == 0 && i % b == 0)
 		{
-			cout << "Fizz Buzz" << endl;
+			if (i % c == 0)
+			{
+				cout << "Fizz  Buzz Woof" << endl;
+			}
+			
 		}
 		else
 		{
-			if (i % a == 0)
+			if (i % a == 0 && i % b == 0)
 			{
-				cout << "Fizz" << endl;
+				cout << "Fizz Buzz" << endl;
 			}
-			if (i % b == 0)
+			else
 			{
-				cout << "Buzz" << endl;
+				if (i % a == 0 && i % c == 0)
+				{
+					cout << "Fizz Woof" << endl;
+				}
+				else
+				{
+					if (i % b == 0 && i % c == 0)
+					{
+						cout << "Buzz Woof" << endl;
+					}
+					else
+					{
+						if (i % a == 0)
+						{
+							cout << "Fizz" << endl;
+						}
+						if (i % b == 0)
+						{
+							cout << "Buzz" << endl;
+						}
+						if (i % c == 0)
+						{
+							cout << "Woof" << endl;
+						}
+						if (i % a != 0 && i % b != 0 && i%c !=0)
+						{
+						printf("%d\n", i);
+						}
+					}
+					
+				}
+				
 			}
-
-			if (i % a != 0 && i % b != 0)
-			{
-				printf("%d\n", i);
-			}
+		
 		}
 
 		
